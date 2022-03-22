@@ -8,10 +8,12 @@ import Products from '../components/Products'
 import Slider from '../components/Slider'
 import Login from './Login'
 // import { connect } from 'react-redux'
+import 'dotenv/config'
 
 const Home = () => {
     return (
         <div style={{backgroundColor: "#FFF1C8"}} >
+            {console.log("process ========= ",process.env.REACT_APP_LOGIN )}
             <Announcement/>
             <Navbar/>
             <Slider/>
