@@ -1,0 +1,2 @@
+export const LOGIN_ACTIVITY = "LOGIN_ACTIVITY"
+export const PRODUCT_LIST = "PRODUCT_LIST"
