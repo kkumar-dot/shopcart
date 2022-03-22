@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const Container = styled.div`
@@ -73,10 +73,6 @@ const Desc = styled.p`
     font-weight: 500;
     letter-spacing: 3px;
 `
-// const Button = styled.button`
-//     padding: 10px;
-//     font-size: 20px;
-// `
 
 const Slider = () => {
     const[slideIndex, setSlideIndex] = useState(0);

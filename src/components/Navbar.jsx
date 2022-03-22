@@ -80,7 +80,6 @@ const Navbar = (props) => {
 
     return (
         <Container>
-            {console.log("props value ==== ", props?.user)}
             <Wrapper>
                 <Left>
                     <Paper
@@ -99,14 +98,7 @@ const Navbar = (props) => {
                             <SearchIcon />
                         </IconButton>
                         <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-                        {/* <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions">
-                            <DirectionsIcon />
-                        </IconButton> */}
                     </Paper>
-                    {/* <SearchContainer>
-                        <Input/>
-                        <Search style={{ fontSize: '20', color: "gray" }} />
-                    </SearchContainer> */}
                 </Left>
                 <Center>
                     <Logo>
@@ -129,7 +121,7 @@ const Navbar = (props) => {
                         </Link>
                     </MenuItem>
                     <MenuItem>
-                        <Badge badgeContent={4} color="secondary">
+                        <Badge badgeContent={0} color="secondary">
                             <ShoppingCartOutlined/>
                         </Badge>
                     </MenuItem>

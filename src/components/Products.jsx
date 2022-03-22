@@ -11,7 +11,6 @@ const Container = styled.div`
     justify-content: space-between;
 `
 const Products = (props) => {
-    console.log("========= ", props)
     return (
         <Container>
             {props?.products?.map((value) => (

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
     flex: 1;
@@ -50,6 +51,8 @@ const Div = styled.div`
 `
 
 const CategoryItem = ({item}) => {
+
+    const navigate = useNavigate()
     return (
         <Container>
             <Div>
@@ -57,7 +60,7 @@ const CategoryItem = ({item}) => {
             </Div>
             <Info>
                 {/* <Title>{item.title}</Title> */}
-                <Button>Shop Now</Button>
+                <Button onClick={() => navigate('/productList')} >Shop Now</Button>
             </Info>
         </Container>
     )

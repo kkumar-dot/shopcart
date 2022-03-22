@@ -11,15 +11,22 @@ const Container = styled.div`
     font-weight: bold;
 `
 
+const H4 = styled.h4`
+    margin-right: 20px;
+`
+
+const H = styled.h4`
+`
+
 const Announcement = () => {
     return (
         <Container>
-            <h4 style={{ marginRight: '2rem' }} >
+            <H4>
                 Super Deal !
-            </h4>
-            <h4>
+            </H4>
+            <H>
                 Get Cashback with New Arrival Products
-            </h4>
+            </H>
         </Container>
     )
 }

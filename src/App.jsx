@@ -1,9 +1,6 @@
-// import Cart from "./pages/Cart";
 import Home from "./pages/Home";
-// import Login from "./pages/Login";
 import Product from "./pages/Product";
 import ProductList from "./pages/ProductList";
-import Register from "./pages/Register";
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import Cart from './components/Cart'
@@ -21,7 +18,6 @@ import {
 
 const App = () => {
   return (
-    // <Provider>
       <Router>
         <Routes>
           <Route path='/login' element={<Login/>} />
@@ -31,8 +27,6 @@ const App = () => {
           <Route path="/cart" element={<Cart/>}/>
         </Routes>
       </Router>
-    // </Provider>
-    // <Login/>
   )
 };
 
