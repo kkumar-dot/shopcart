@@ -58,6 +58,7 @@ const ProductList = () => {
     const [price, setPrice] = React.useState('');
 
     const handleChange = (event) => {
+        console.log("handle change ======= ", event)
         event.target.name == "product" && setProduct(event.target.value);
         event.target.name == "price" && setPrice(event.target.value);
     };
@@ -92,12 +93,12 @@ const ProductList = () => {
                             label="product"
                             onChange={handleChange}
                         >
-                            <MenuItem value={30}>Mobiles</MenuItem>
-                            <MenuItem value={10}>Cloths</MenuItem>
-                            <MenuItem value={20}>Food</MenuItem>
-                            <MenuItem value={30}>Shoes</MenuItem>
-                            <MenuItem value={10}>Electronics</MenuItem>
-                            <MenuItem value={20}>Toys</MenuItem>
+                            <MenuItem value={"mobile"}>Mobiles</MenuItem>
+                            <MenuItem value={"cloth"}>Cloths</MenuItem>
+                            <MenuItem value={"food"}>Food</MenuItem>
+                            <MenuItem value={"shoe"}>Shoes</MenuItem>
+                            <MenuItem value={"electronic"}>Electronics</MenuItem>
+                            <MenuItem value={"toy"}>Toys</MenuItem>
                         </Select>
                         </FormControl>
                     </div>
@@ -126,6 +127,7 @@ const ProductList = () => {
                 <div style={{flex: 1}} >
                 {products && <Products
                     products={products}
+                    selectedProduct={product}
                 />}
                 </div>
             </Main>

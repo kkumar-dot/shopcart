@@ -11,9 +11,15 @@ const Container = styled.div`
     justify-content: space-between;
 `
 const Products = (props) => {
+    console.log("props============ ", props)
+    let filteredData = props?.selectedProduct != "" && props?.products.filter(item => item.category == props?.selectedProduct)
     return (
         <Container>
-            {props?.products?.map((value) => (
+            {filteredData.length > 0 ? 
+            filteredData?.map((value) => (
+                <MediaCard item={value} />
+            )) :
+            props?.products?.map((value) => (
                 <MediaCard item={value} />
             ))}
         </Container>
